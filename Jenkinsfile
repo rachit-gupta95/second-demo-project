@@ -4,7 +4,7 @@ node{
   }
   stage('Compile-package'){
     def mvnHome = tool name: 'Maven_3.8.5', type: 'maven'
-    sh "${mvnHome}/bin/mvn clean build"
+    sh "${mvnHome}/bin/mvn build"
   }
   
 }
